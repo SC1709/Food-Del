@@ -3,7 +3,7 @@ import userModel from './../models/userModel.js';
 
 //placing user order for frontend
 const placeOrder = async (req,res) => {
-    const frontend_url = "http://localhost:5174";
+    const frontend_url = "https://food-del-frontend-givz.onrender.com";
     try {
         const newOrder = new orderModel({
             userId: req.body.userId,
