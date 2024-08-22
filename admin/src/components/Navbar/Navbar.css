@@ -10,3 +10,10 @@
 .navbar .profile{
     width: 40px;
 }
+.profile-img{
+    display: flex;
+    gap: 15px;
+}
+.logout{
+    cursor: pointer;
+}
