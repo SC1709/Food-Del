@@ -18,7 +18,7 @@ const AdminLogin = () => {
             if (response.data.success) {
                 localStorage.setItem('adminToken', response.data.token);
                 toast.success('Login Successful!');
-                window.location.href = 'http://localhost:5173/'; // Redirect to admin dashboard
+                window.location.href = 'https://food-del-admin-lzov.onrender.com'; // Redirect to admin dashboard
             } else {
                 toast.error('Invalid credentials');
             }

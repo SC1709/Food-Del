@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.removeItem("token");
-    window.location.href = 'http://localhost:5174/';
+    window.location.href = 'https://food-del-frontend-givz.onrender.com';
   };
   return (
     <div className='navbar'>
