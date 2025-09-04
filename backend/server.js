@@ -33,6 +33,14 @@ app.get("/",(req,res)=>{
     res.send("api working");
 })
 
+app.get("/healthz", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    uptime: process.uptime(), // how long server has been running
+    timestamp: Date.now(),
+  });
+});
+
 app.listen(port,()=>{
     console.log(`server started on http://localhost:${port}`);  
 })
