@@ -104,7 +104,7 @@ Admin: [https://food-del-admin-lzov.onrender.com](https://food-del-admin-lzov.on
 - 🔐 JWT Authentication 
 - 🧂 bcrypt for password hashing 
 - 📦 dotenv for environment configuration
-- 🧪 CORS for logging and API support
+- 🧪 CORS for cross-origin API requests
 
 ### 🧑‍💼 Admin Panel
 
@@ -228,7 +228,7 @@ ADMIN_PASSWORD=your_admin_user_password
 * 🎨 Fully Responsive UI
 * 🔐 User Authentication (JWT + bcrypt)
 * 🧭 Client-Side Routing with React Router
-* 📦 MongoDB Schema Design for Products,Orders,etc.
+* 📦 MongoDB Schema Design (User, Food, Order, Cart, etc).
 * 📦 Food Items Filters & Search
 * 📡 REST API Integration with Express Backend   
 
@@ -236,7 +236,7 @@ ADMIN_PASSWORD=your_admin_user_password
 
 ## 🔮 Future Enhancements
 
-* 📦 Product CRUD with Admin role
+* 📦 Advanced Product Management (categories, availability toggle)
 * 💳 Payment Gateway Razorpay/Stripe
 * 🛍️ Order Tracking System (track orders, cancel, reorder)
 * 📊 Sales Analytics Dashboard (for Admins)
@@ -247,25 +247,31 @@ ADMIN_PASSWORD=your_admin_user_password
 
 ### 📦 API Endpoints
 
-> Current endpoints focus on products. Future updates will expand support to users, orders, authentication, and payments.
-
-#### 🛍️ Product Routes
-
-| Method | Endpoint              | Description                  | Access     |
-|--------|-----------------------|------------------------------|------------|
-| GET    | `/api/products`       | Fetch all products           | Public     |
-| GET    | `/api/products/:id`   | Fetch product by ID          | Public     |
-| POST   | `/api/products`       | Add a new product            | Admin Only |
-| PUT    | `/api/products/:id`   | Update product by ID         | Admin Only |
-| DELETE | `/api/products/:id`   | Delete product by ID         | Admin Only |
-
 #### 👤 User Routes
 
 | Method | Endpoint              | Description                  | Access     |
 |--------|-----------------------|------------------------------|------------|
-| POST   | `/api/users/register` | Register new user            | Public     |
-| POST   | `/api/users/login`    | Login user & get JWT         | Public     |
-| GET    | `/api/users`          | Get all users                | Admin Only |
+| POST   | `/api/user/register`  | Register new user            | Public     |
+| POST   | `/api/user/login`     | Login user & get JWT         | Public     |
+| GET    | `/api/user`           | Get all users                | Admin Only |
+
+#### 🛒 Cart Routes
+
+| Method | Endpoint              | Description                | Access     |
+|--------|-----------------------|----------------------------|------------|
+| POST   | `/api/cart/add`       | Add item to cart           | Private    |
+| POST   | `/api/cart/remove`    | Remove item from cart      | Private    |
+| POST   | `/api/cart/get`       | Get logged-in user cart    | Private    |
+
+#### 📦 Order Routes
+
+| Method | Endpoint               | Description                | Access     |
+|--------|------------------------|----------------------------|------------|
+| POST   | `/api/order/place`     | Place a new order          | Private    |
+| POST   | `/api/order/verify`    | Verify payment status      | Public     |
+| POST   | `/api/order/userorders`| Get logged-in users orders | Private    |
+| GET    | `/api/order/list`      | Get all orders (Admin)     | Admin Only |
+| POST   | `/api/order/status`    | Update order status        | Admin Only |
 
 ---
 
@@ -309,5 +315,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Sachin Choudhary**
 • [🐙 GitHub](https://github.com/SC1709) • [🔗 LinkedIn](https://linkedin.com/in/sachin-choudhary)
 
-> *"Food-Del – Your one-stop destination for effortless online shopping."*
+> *"Food-Del – Your one-stop destination for effortless food ordering."*
 
