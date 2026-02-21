@@ -28,6 +28,62 @@ Admin: [https://food-del-admin-lzov.onrender.com](https://food-del-admin-lzov.on
 
 ---
 
+<!-- ## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](./frontend/public/screenshots/home.png)
+
+### 🔐 Login Page
+![Login Page](./frontend/public/screenshots/login.png)
+
+### 🛒 Cart Page
+![Cart](./frontend/public/screenshots/cart.png)
+
+### 🧾 My Orders Page
+![My Orders Page](./frontend/public/screenshots/myorder.png)
+
+### 🧑‍💼 Admin Dashboard
+![Admin](./frontend/public/screenshots/admin.png)
+
+--- -->
+
+## 📸 Screenshots
+
+<table>
+<tr>
+<td width="50%">
+<h4 align="center">🏠 Home Page</h4>
+<img src="./frontend/public/screenshots/home.png" width="100%" />
+</td>
+<td width="50%">
+<h4 align="center">🔐 Login Page</h4>
+<img src="./frontend/public/screenshots/login.png" width="100%" />
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<h4 align="center">🛒 Cart Page</h4>
+<img src="./frontend/public/screenshots/cart.png" width="100%" />
+</td>
+<td width="50%">
+<h4 align="center">🧾 My Orders</h4>
+<img src="./frontend/public/screenshots/myorder.png" width="100%" />
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<h4 align="center">🧑‍💼 Admin Dashboard</h4>
+<img src="./frontend/public/screenshots/admin.png" width="100%" />
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Tech Stack
 
 ### 🖥️ Frontend (User)
